@@ -12,8 +12,8 @@ function filterCards() {
     });
 }
 
-const SPREADSHEET_ID = '1kwA2QmGNGh5OXzReTn7KYBa7lwta51qB0bSoe_9zhck';
-const API_KEY = 'AIzaSyAEGZEboq-an9Xaq0sQySnHEvt8rLEjG78';
+const SPREADSHEET_ID = 'Enter Your Spreadsheet ID';
+const API_KEY = 'API Key from Google cloud';
 const SHEET_NAME = 'FoodInfo'; // Update with your sheet name
 
 // Fetch data from Google Sheets API
