@@ -19,7 +19,7 @@ let postId = 1; // Unique identifier for each post
             values: [[food, description, location]]
         };
 
-        fetch('https://sheets.googleapis.com/v4/spreadsheets/1kwA2QmGNGh5OXzReTn7KYBa7lwta51qB0bSoe_9zhck/values/FoodInfo!A1:C1:append?valueInputOption=RAW', {
+        fetch('YOUR SPREADSHEET LINK', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
