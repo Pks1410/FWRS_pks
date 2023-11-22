@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .profile-container{
+                width: auto;
+                height: auto;
+                background-color: rgb(191, 128, 128);
+                margin-left: 4.5rem;
+                display: flex;
+                justify-content: center;
+            }
+            .profile-inner{
+                height: auto;
+                width: 75%;
+                border: 4px solid red;
+                margin-top: 50px;
+            }
+            .profile-pic{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                border: 2px solid red;
+            }
+            .profile-pic img{
+                border-radius: 50%;
+                height: 150px;
+                width: 150px;
+            }
+            .profile-pic h3{
+                margin-top: -20px;
+                color: rgba(77, 72, 72,0.7);
+            }
+            .profile-about{
+                text-align: center;
+                margin-top: 50px;
+                border: 2px solid red;
+            }
+            .profile-about h1{
+                color: rgb(0,122,225);
+            }
+            .profile-about p{
+                font-size: 18px;
+            }
+            .personal-details{
+                border: 2px solid red;
+                height: 400px;
+                margin-top: 80px;
+            }
+            .personal-details h2{
+                color: rgb(0,122,225);
+                padding-left: 50px;
+                border: 2px solid red;
+            }
+            .personal-info{
+                border: 2px solid red;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                padding-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profile-container">
+            <div class="profile-inner">
+                <div class="profile-pic">
+                    <img src="assets/back4.jpg">
+                    <h1>Pratham Singh</h1>
+                    <h3>user@gmail.com</h3>
+                </div>
+                <div class="profile-about">
+                    <h1>About Yourself</h1>
+                    <p>Hello There I am Pratham Singh
+                </div>
+                <div class="personal-details">
+                    <h2>Personal Details</h2>
+                    <div class="personal-info">
+                        <div class="field">
+                            <label for="postTitle">Food Item:</label><br>
+                            <input class="formInput" type="text" id="postTitle" name="postTitle" required><br><br>
+                        </div>
+                        <div class="field">
+                            <label for="postTitle">Food Item:</label><br>
+                            <input class="formInput" type="text" id="postTitle" name="postTitle" required><br><br>
+                        </div>
+                        <div class="field">
+                            <label for="postTitle">Food Item:</label><br>
+                            <input class="formInput" type="text" id="postTitle" name="postTitle" required><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

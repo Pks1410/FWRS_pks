@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="rStyle.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0ff92343ae.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <h1>F</h1>
+            <ul class="sideOptions">
+                <li class="side-item"><a href="#"><i class="fa-solid fa-house" style="color: #015af4;"></i></a></li>
+                <li class="side-item"><a href="#"><i class="fa-solid fa-grip" style="color: #015af4;"></i></a></li>
+                <li class="side-item"><a href="#"><i class="fa-solid fa-user" style="color: #015af4;"></i></a></li>
+
+            </ul>
+            <div class="sideBottom">
+                <img src='/assessts/back4.jpg'>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <div class="mainSide">
+            <div class="mainHead">
+                <div class="mainTop">
+                    <h1>Welcome To FWRS</h1>
+                    <h4>FROM EXCESS TO ESSENTIALS: EVERY BITE COUNTS.</h4>
+                </div>
+                <div class="mainBottom">
+                    <h1>Food Availability</h1>
+                    <h5>Food donations from various businesses are shown below.</h5>
+                </div>
+            </div>
+            <div class="searchBar">
+                <input class="input" id="searchInput" placeholder="City Name" oninput="filterCards()">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #080808;"></i><span>Search City</span>
+            </div>
+            <div class="card-container">
+                <div class="card-lists" id="card-lists">
+                    <div class="cards" id="cards" data-location="Chandigarh">
+                        <h6>Food</h6>
+                        <div class="card-title">
+                            <h1>Breakfast</h1>
+                        </div>
+                        <div class="card-desc">
+                            <p><b>Description:</b> Available 10 Plates of Oats. Use in 1-2 days.
+                        </div>
+                        <div class="card-bar">
+                            <span></span>
+                            <h4>User Name</h4>
+                            <i class="fa-solid fa-phone-volume fa-xl" style="color: #0561ff;"></i>
+                            <i class="fa-solid fa-location-dot fa-xl" style="color: #0561ff;"></i>
+                        </div>
+                    </div>
+                    <div class="cards" data-location="Mohali">
+                        <h6>Food</h6>
+                        <div class="card-title">
+                            <h1>Rice and Dal</h1>
+                        </div>
+                        <div class="card-desc">
+                            <p><b>Description:</b> Available 5 Plates. Use in 1-2 days.
+                        </div>
+                        <div class="card-bar">
+                            <span></span>
+                            <h4>User Name</h4>
+                            <i class="fa-solid fa-phone-volume fa-xl" style="color: #0561ff;"></i>
+                            <i class="fa-solid fa-location-dot fa-xl" style="color: #0561ff;"></i>
+                        </div>
+                    </div>
+                    <div class="cards" data-location="Punjab">
+                        <h6>Food</h6>
+                        <div class="card-title">
+                            <h1>Rice and Beans Bowl</h1>
+                        </div>
+                        <div class="card-desc">
+                            <p><b>Description:</b> Available 15 bowls. Use in 1-2 days.
+                        </div>
+                        <div class="card-bar">
+                            <span></span>
+                            <h4>User Name</h4>
+                            <i class="fa-solid fa-phone-volume fa-xl" style="color: #0561ff;"></i>
+                            <i class="fa-solid fa-location-dot fa-xl" style="color: #0561ff;"></i>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="rScript.js"></script>
+    </body>
+</html>

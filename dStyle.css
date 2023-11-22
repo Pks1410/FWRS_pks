@@ -1,0 +1,335 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    width: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 710px;
+    position: fixed;
+    box-shadow: 1px 0 10px gray;
+}
+
+.sidebar h1 {
+    text-align: center;
+}
+
+.sideOptions li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 4.5rem;
+    height: 3.5rem;
+    position: relative;
+    left: -2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(188, 180, 180, 0.6);
+}
+
+.sideOptions li:active {
+    background-color: lightseagreen;
+}
+
+.sideOptions li:hover {
+    cursor: pointer;
+    border-bottom: 3px solid rgba(188, 180, 180, 1);
+}
+
+.sideOptions a {
+    text-decoration: none;
+}
+
+.sideOptions a:active {
+    background-color: lightseagreen;
+}
+
+.sideBottom {
+    border-top: 2px solid gray;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5px;
+    margin-top: auto;
+}
+
+.sideBottom img {
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+}
+
+.sideBottom i {
+    padding-left: 5px;
+}
+
+.mainSide {
+    margin-left: 4.5rem;
+    height: 800px;
+}
+
+.mainHead {
+    box-shadow: 0 1px 10px rgb(95, 87, 87);
+    height: auto;
+}
+
+.mainTop {
+    background: url("/assessts/foodback.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainTop h1,
+.mainTop h4 {
+    color: rgb(1, 2, 2);
+}
+
+.mainTop h1 {
+    font-size: 56px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainTop h4 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainBottom h1,
+.mainBottom h5 {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding: 0;
+}
+
+.mainBottom h1 {
+    font-size: 32px;
+    color: rgb(94, 98, 156);
+    font-weight: 800;
+}
+
+.mainBottom h5 {
+    font-size: 16px;
+    color: rgb(94, 98, 156);
+    font-weight: 700;
+}
+
+.mainBottom {
+    padding-bottom: 5px;
+}
+
+.dashboard {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 34px;
+    border-bottom: 4px double black;
+    border-top: 4px double rgb(94,98,156);
+    width: 540px;
+    text-align: center;
+}
+
+.input {
+    border: 2px solid transparent;
+    width: 25em;
+    height: 2.7em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+
+.input:hover,
+.input:focus {
+    border: 2px solid #4A9DEC;
+    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+    background-color: white;
+}
+
+.searchBar span {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.card-container {
+    height: auto;
+    margin-top: 4rem;
+}
+
+.card-lists {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards {
+    height: 300px;
+    width: 430px;
+    border: 3px solid black;
+    margin: 50px auto;
+    box-shadow: 0px 31px 31px -15px rgba(150, 150, 150, 0.95);
+}
+.cards h6{
+    color: white;
+    background-color: blue;
+    width: 30px;
+    padding: 4px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.card-title {
+    height: fit-content;
+    margin-top: -30px;
+    width: fit-content;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.card-desc {
+    height: fit-content;
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.card-bar {
+    height: 50px;
+    width: 80%;
+    margin-left: 30px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+.card-bar span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    margin-right: 8px;
+}
+.card-bar i{
+    margin-left: 60px;
+}
+.card-bar i:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition-timing-function: ease-in;
+}
+#userModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    height: max-content;
+    width: 50%;
+}
+.modal-content h1{
+    text-align: center;
+}
+.modal-content label{
+    font-size: 24px;
+}
+.closeModal{
+    cursor: pointer;
+}
+.formInput {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+    font-size: 20px;
+  }
+  
+  .formInput:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .formInput:active {
+    transform: scale(0.95);
+  }
+  
+  .formInput:focus {
+    border: 2px solid grey;
+  }
+  .modalButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  .modalButton:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  .modalButton:active {
+    transform: scale(0.9);
+  }
+  .postBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #F3F3F3;
+    position: fixed;
+    bottom: 10px;
+    left: 95%;
+    right: 5%;
+    border: none;
+  }
+  .postBtn:hover{
+    background-color:#E6E6FA;
+    border: 3px solid black;
+  }
+  

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/0ff92343ae.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: url("/assessts/back3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .wrapper {
+            width: 800px;
+            height: 600px;
+            position: relative;
+            margin: 3% auto;
+            box-shadow: 2px 18px 70px 0px #9D9D9D;
+            overflow: hidden;
+        }
+        .login-text {
+            width: 800px;
+            height: 450px;
+            background: linear-gradient(to left, #ab68ca, #de67a3);
+            position: absolute;
+            top: -300px;
+            box-sizing: border-box;
+            padding: 6%;
+            transition: all 0.5s ease-in-out;
+            z-index: 11;
+        }
+
+        .text {
+            margin-left: 20px;
+            color: #fff;
+            display: none;
+            transition: all 0.5s ease-in-out;
+            transition-delay: 0.3s;
+        }
+        .text h1{
+            font-size: 36px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+        }
+
+        hr {
+            width: 50%;
+            float: left;
+            background-color: #fff;
+            font-size: 16px;
+        }
+
+        input {
+            margin-top: 30px;
+            height: 40px;
+            width: 300px;
+            border-radius: 2px;
+            border: none;
+            background-color: #444;
+            opacity: 0.6;
+            outline: none;
+            color: #fff;
+            padding-left: 10px;
+        }
+
+        input[type=text] {
+            margin-top: 60px;
+        }
+
+        .login-btn {
+            background: #fff;
+            border: none;
+            border-radius: 2px;
+            color: #696a86;
+        }
+        .login-btn:hover{
+            background-color: #72073d;
+            cursor: pointer;
+            transition: 0.5s ease-in;
+            border: 3px solid snow;
+            color: #fff;
+        }
+        .cta {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #696a86;
+            border: 2px solid #fff;
+            position: absolute;
+            bottom: -30px;
+            left: 370px;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+            z-index: 11;
+        }
+
+        .call-text {
+            background-color: #fff;
+            width: 800px;
+            height: 450px;
+            position: absolute;
+            bottom: 0;
+            padding: 10%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            font-size: 42px;
+            margin-top: 10%;
+            color: #696a86;
+        }
+        span {
+            color: #333;
+            font-weight: bolder;
+        }
+
+        button {
+            height: 40px;
+            width: 180px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(to left, #ab68ca, #de67a3);
+            color: #fff;
+            font-weight: bolder;
+            margin-top: 30px;
+            cursor: pointer;
+            outline: none;
+        }
+        .show-hide {
+            display: block;
+        }
+
+        .expand {
+            transform: translateY(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="login-text">
+            <button class="cta"><i class="fas fa-chevron-down fa-1x"></i></button>
+            <div class="text">
+                <h1>Login</h1>
+                <hr>
+                <br>
+                <input type="text" placeholder="Username">
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <button class="login-btn" onclick="redirect()">Log In</button>
+            </div>
+        </div>
+        <div class="call-text">
+            <h1><span>Welcome</span> Back</h1>
+        </div>
+
+    </div>
+    <script>
+        var cta = document.querySelector(".cta");
+        var check = 0;
+
+        cta.addEventListener('click', function (e) {
+            var text = e.target.nextElementSibling;
+            var loginText = e.target.parentElement;
+            text.classList.toggle('show-hide');
+            loginText.classList.toggle('expand');
+            if (check == 0) {
+                cta.innerHTML = "<i class=\"fas fa-chevron-up\"></i>";
+                check++;
+            }
+            else {
+                cta.innerHTML = "<i class=\"fas fa-chevron-down\"></i>";
+                check = 0;
+            }
+        })
+        function redirect(){
+            window.location.href='receiver.html';
+        }
+    </script>
+</body>
+
+</html>
